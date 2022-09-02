@@ -1,0 +1,19 @@
+{
+  "icon": "docker.svg",
+  "vm": {
+    "composefile": "docker-compose.yaml",
+    "exposes": {
+      "socket": "extension-mailhog-extension.sock"
+    }
+  },
+  "ui": {
+    "dashboard-tab": {
+      "title": "Mailhog-Extension",
+      "src": "index.html",
+      "root": "ui",
+      "backend": {
+        "socket": "extension-mailhog-extension.sock"
+      }
+    }
+  }
+}
